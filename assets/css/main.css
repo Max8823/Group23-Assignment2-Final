@@ -8,9 +8,9 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-html, body, div, span,iframe, h1, h2, h3, h4, h5, h6, p, 
- a, em, img, var, b, u, i, center, dl, dt, dd, ol, ul, li, 
- label, table, tr, th, td, article, footer, header, menu, nav, 
+html, body, div, span,iframe, h1, h2, h3, h4, h5, h6, p,
+ a, em, img, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+ label, table, tr, th, td, article, footer, header, menu, nav,
 section, summary {
 
 	margin: 0;
@@ -43,6 +43,7 @@ blockquote, q {
 
 table {
 	border-collapse: collapse;
+	overflow:hidden;
 	border-spacing: 0;
 }
 
@@ -207,7 +208,7 @@ input, select, textarea {
 
 	h3 {
 		font-size: 1rem;
-	
+
 	}
 
 	h4 {
@@ -227,7 +228,7 @@ input, select, textarea {
 		h1 {
 			font-size: 1.75rem;
 			line-height: 1.4;
-		
+
 		}
 
 		h2 {
@@ -366,7 +367,7 @@ input, select, textarea {
 			width: 100%;
 		}
 
-	
+
 
 			.image.main img {
 				width: 100%;
@@ -522,7 +523,7 @@ input, select, textarea {
 					width: 100%;
 				}
 
-					
+
 
 		}
 
@@ -565,7 +566,7 @@ input, select, textarea {
 
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
-		overflow-x: auto;
+		overflow-x:hidden;
 	}
 
 	table {
@@ -583,9 +584,7 @@ input, select, textarea {
 				background-color: rgba(255, 255, 255, 0.075);
 			}
 
-		table td {
-			padding: 0.75em 0.75em;
-		}
+		
 
 		table th {
 			color: #ffffff;
@@ -629,7 +628,6 @@ input, select, textarea {
 				border-top: 0;
 			}
 
-/* Button */
 
 /* BG */
 
@@ -798,11 +796,11 @@ input, select, textarea {
 			margin-top: 3.5rem;
 		}
 
-			
+
 		#header .content {
 			border-style: solid;
 			border-color: #ffffff;
-			
+
 			border-bottom-width: 1px;
 			max-width: 100%;
 		}
@@ -822,7 +820,7 @@ input, select, textarea {
 				overflow: hidden;
 			}
 
-			
+
 
 		#header nav ul {
 			display: -moz-flex;
@@ -857,7 +855,7 @@ input, select, textarea {
 					letter-spacing: 0.2rem;
 					font-size: 0.8rem;
 					border-bottom: 0;
-					
+
 				}
 
 					#header nav ul li a:hover {
@@ -932,7 +930,7 @@ input, select, textarea {
 					height: calc(2rem + 1px);
 				}
 
-			
+
 
 		}
 
@@ -946,7 +944,7 @@ input, select, textarea {
 					padding: 2.5rem 0;
 				}
 
-				
+
 
 				#header nav ul {
 					-moz-flex-direction: column;
@@ -1416,8 +1414,9 @@ background-color: rgba(255, 255, 255, 0.075);
 
 
 /*  Intro  page CSS  Start */
+
+
 	#intro nav2 a{
-	
 			position:absolute;
 			padding: 5px;
 			line-height: 2.75rem;
@@ -1428,7 +1427,7 @@ background-color: rgba(255, 255, 255, 0.075);
 			border-bottom: 0;
 			overflow:hidden;
 			margin-top:-45px;
-			border: solid 1px #ffffff;	
+			border: solid 1px #ffffff;
 
 	}
 
@@ -1440,9 +1439,27 @@ background-color: rgba(255, 255, 255, 0.075);
 	background-color: rgba(255, 255, 255, 0.175);
 }
 
+#intro a{
+	color:lightblue;
+}
+
+#intro a:hover{
+   color:lightcoral;
+}
+#intro a:active {
+   color: lightgreen;
+}
+
+#intro a:visited{
+	color: lightgreen;
+}
+
 #intro h1{
+	text-align: center;
+	color:silver;
+	text-decoration: underline;
+	text-decoration-color: silver;
 	letter-spacing: 0.2rem;
-	
 }
 
 
@@ -1457,22 +1474,20 @@ background-color: rgba(255, 255, 255, 0.075);
 	letter-spacing: 1px;
 	text-align: center;
 	font-size: 25px;
+
 }
 
-#Intro a{
-	color:lightblue;
+#intro table{
+	overflow: hidden;
 }
 
-#Intro a:hover{
-   color:lightcoral;
-}
-#Intro a:active {
-   color: lightgreen;
-}
-#Intro a:visited{
-	color: lightgreen;
+#intro tr{
+overflow: hidden;
 }
 
+#intro td{
+	overflow: hidden;
+}
 .teamImg{
 position:relative;
 
@@ -1487,7 +1502,7 @@ position:relative;
 	width: 18.5%;
 	margin-right: 10px;
 
-	
+
  }
  .teamImg p{
 	float:none;
@@ -1496,9 +1511,15 @@ position:relative;
 
  .teamImg2{
 	position:relative;
-	
+		display:block;
+		float: left;
+		color:white;
+		border: 1px #ffffff;
+		max-width: 30rem;
+		margin-right: 10px;
+
 	}
-	
+
 	 .teamImg2 img {
 		position:relative;
 		display:block;
@@ -1507,91 +1528,84 @@ position:relative;
 		border: 1px #ffffff;
 		max-width: 30rem;
 		margin-right: 10px;
-	
-		
 	 }
+
 	 .teamImg2 p{
 		float:none;
 		position: absolute;
 	 }
 
+
 	 
 /*  Intro  page CSS  End */
 
-	 .line_breaker {
-		border-bottom: solid 2px silver;
-	 }
-
-/*  It_tech page CSS  Start */
-	 #It_Tech  h1{
-		 
-		text-align: center;
-		letter-spacing: 0.2rem;
-		color:silver;
-		
-	 }
-
-	 #It_Tech h2{
-		 text-align:center;
-		 color: #a62526;
-	 }
-
-	 #It_Tech h3{
-		 color:#a62526;
-	 }
-
-	 #It_Tech a{
-		 color:lightblue;
-	 }
+	 
 
 
-	 #It_Tech a:hover{
-		color:lightcoral;
-	}
-	 #It_Tech a:active {
-		color: lightgreen;
-	 }
-
-	 #It_Tech a:visited{
-		color: lightgreen;
-	}
-
-/*  It_tech page CSS  End */
-
-
-/*  Industry Data page CSS  Start */
-	 #Industry_Data a{
+/*  Career_Plans page CSS  Start */
+	 #Career_Plans a{
 		color:lightblue;
 	}
 
-
-	#Industry_Data a:hover{
+	#Career_Plans a:hover{
 	   color:lightcoral;
    }
-   #Industry_Data a:active {
+   #Career_Plans a:active {
 	   color: lightgreen;
 	}
 
-	#Industry_Data a:visited{
+	#Career_Plans a:visited{
 		color: lightgreen;
 	}
-/*  Industry Data page CSS  End */
+
+	#Career_Plans h1{
+	text-align: center;
+	text-decoration:underline;
+	text-decoration-color: silver;
+	letter-spacing: 0.2rem;
+	color:silver;
+	}
 
 
+	#Career_Plans h2{
+		color:#a62526;
+	}
 
-	#Ideal_jobs h2{
-		color:silver;
+	#Career_Plans h3{
+	color:#a62526;
+	letter-spacing: 1px;
+	text-align: center;
+	font-size: 25px;
 	}
 
 
 
+	
+/*  Career Plans page CSS  End */
+
+
+/*  Project page CSS  Start */
+
+.button #Project.button{ 
+	color: silver!important;
+	background-color: transparent!important;
+	border:solid 1px !important;
+	border-color:silver !important;
+	cursor: pointer!important;
+	padding: 18px!important;
+	border-radius: 18px!important;
+	text-align: left!important;
+	outline: none!important;
+	font-size: 20px !important;
+	transition: 0.4s!important;
+}
 
 #Project  h1{
-		 
+
 	text-align: center;
 	letter-spacing: 0.2rem;
 	color:silver;
-	
+
  }
 
  #Project h2{
@@ -1600,7 +1614,9 @@ position:relative;
  }
 
  #Project h3{
-	 color:#a62526;
+	text-align:center;
+	 color:silver;
+	 
  }
 
  #Project a{
@@ -1618,18 +1634,20 @@ position:relative;
  #Project a:visited{
 	color: lightgreen;
 }
-	
 
-#References{
-	
-}
 
+/*  Project page CSS  End */
+
+
+
+
+
+/*  References page CSS  Start */
 #References  h1{
-		 
+
 	text-align: center;
 	letter-spacing: 0.2rem;
 	color:silver;
-	
  }
 
  #References h2{
@@ -1661,32 +1679,98 @@ position:relative;
 	color: lightgreen;
 }
 
-
-#Industry_Data a.button1{
+#References button{
 	color: silver;
 	background-color: transparent;
 	border:solid 1px;
-	border-color:white;
+	border-color:silver;
 	cursor: pointer;
 	padding: 18px;
-	width: 100%;
-	border: none;
+	border-radius: 18px;
 	text-align: left;
 	outline: none;
-	font-size: 24px;
+	font-size: 20px;
 	transition: 0.4s;
+}
+
+#References .button1{
+	color: silver;
+	background-color: transparent;
+	border:solid 1px;
+	border-color:silver;
+	cursor: pointer;
+	padding: 18px;
+	border-radius: 18px;
+	text-align: left;
+	outline: none;
+	font-size: 20px;
+	transition: 0.4s;
+}
+
+
+
+
+/*  References page CSS  END */
+
+
+/*  TOOLS PAGE CSS START */
+#Tools a{
+	color:lightblue;
+}
+
+#Tools a:hover{
+   color:lightcoral;
+}
+#Tools a:active {
+   color: lightgreen;
+}
+
+#Tools a:visited{
+	color: lightgreen;
+}
+
+
+
+#Tools h1{
+	text-align: center;
+	letter-spacing: 0.2rem;
+	color:silver;
+	text-decoration: underline;
+	text-decoration-color:silver;
 
 }
 
-#Industry_Data a.button1:hover{
-	background-color: rgba(255, 255, 255, 0.175);
+#Tools h2{
+	text-align:center;
+	color: #a62526;
+	text-decoration:underline;
+	text-decoration-color: #a62526;
+}
+
+#Tools h3{
+
+	color: #a62526
+}
+
+
+#Tools backbutton{
+	color: silver;
+	background-color: transparent;
+	border:solid 1px;
+	border-color:silver;
+	cursor: pointer;
+	padding: 18px;
+	border-radius: 18px;
+	text-align: left;
+	outline: none;
+	font-size: 20px;
+	transition: 0.4s;
   }
+/*  TOOLS PAGE CSS END */
 
-
-	
-
+/*  Misc CSS  Start */
 .accordion {
-  
+
   color: silver;
   background-color: transparent;
   border:solid 1px;
@@ -1701,6 +1785,9 @@ position:relative;
   transition: 0.4s;
 }
 
+.accordion h3{
+	text-align: center;
+}
 
 .accordion:after {
 	content: '\002B';
@@ -1709,10 +1796,27 @@ position:relative;
 	float: right;
 	margin-left: 5px;
   }
-  
+
+
+  .accordion .teamImg2{
+	position:relative;
+	display:block;
+	float: left;
+	color:white;
+	border: 1px #ffffff;
+	max-width: 100px;
+	margin-right: 10px;
+  }
+
+  #Project imageContainer > img:hover {
+	width: 500px;
+	height: 200px;
+  }
+
+
   .active:after {
 	content: "\2212";
-	
+
   }
 
 .active, .accordion:hover {
@@ -1728,7 +1832,7 @@ position:relative;
 }
 
 .accordion2 {
-  
+
 	color: silver;
 	background-color: transparent;
 	border:solid 1px;
@@ -1742,8 +1846,8 @@ position:relative;
 	font-size: 20px;
 	transition: 0.4s;
   }
-  
-  
+
+
   .accordion2:after {
 	  content: '\002B';
 	  color: #777;
@@ -1751,16 +1855,16 @@ position:relative;
 	  float: right;
 	  margin-left: 5px;
 	}
-	
+
 	.active:after {
 	  content: "\2212";
-	  
+
 	}
-  
+
   .active, .accordion2:hover {
 	background-color: rgba(255, 255, 255, 0.175);
   }
-  
+
   .panel {
 	padding: 0 18px;
 	background-color: transparent;
@@ -1768,7 +1872,15 @@ position:relative;
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
   }
+
+
+
+  .line_breaker {
+	border-bottom: solid 2px silver;
+ }
+
+
+
+  /*  Misc CSS  End */
+
   
-  .video{
-	  margin-left: -54px;
-  }
